@@ -13,6 +13,10 @@
 		1148E80928ABA14D002E5AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148E80728ABA14D002E5AD7 /* Main.storyboard */; };
 		1148E80B28ABA14F002E5AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1148E80A28ABA14F002E5AD7 /* Assets.xcassets */; };
 		1148E80E28ABA14F002E5AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */; };
+		1148E81728ABA190002E5AD7 /* Deltna.png in Resources */ = {isa = PBXBuildFile; fileRef = 1148E81628ABA190002E5AD7 /* Deltna.png */; };
+		11D0207C28ABB499005CDC00 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0207B28ABB499005CDC00 /* SplashController.swift */; };
+		11D0208028ABF888005CDC00 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D0207F28ABF887005CDC00 /* download.png */; };
+		11D0208328ABFF61005CDC00 /* Deltna in Resources */ = {isa = PBXBuildFile; fileRef = 11D0208228ABFF60005CDC00 /* Deltna */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1148E80A28ABA14F002E5AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1148E80D28ABA14F002E5AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1148E80F28ABA14F002E5AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1148E81628ABA190002E5AD7 /* Deltna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deltna.png; sourceTree = "<group>"; };
+		11D0207B28ABB499005CDC00 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		11D0207F28ABF887005CDC00 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		11D0208228ABFF60005CDC00 /* Deltna */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Deltna; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +64,15 @@
 		1148E80028ABA14D002E5AD7 /* Deltna */ = {
 			isa = PBXGroup;
 			children = (
+				11D0208228ABFF60005CDC00 /* Deltna */,
 				1148E80128ABA14D002E5AD7 /* AppDelegate.swift */,
 				1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */,
+				11D0207B28ABB499005CDC00 /* SplashController.swift */,
 				1148E80528ABA14D002E5AD7 /* ViewController.swift */,
 				1148E80728ABA14D002E5AD7 /* Main.storyboard */,
 				1148E80A28ABA14F002E5AD7 /* Assets.xcassets */,
+				11D0207F28ABF887005CDC00 /* download.png */,
+				1148E81628ABA190002E5AD7 /* Deltna.png */,
 				1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */,
 				1148E80F28ABA14F002E5AD7 /* Info.plist */,
 			);
@@ -125,6 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1148E80E28ABA14F002E5AD7 /* LaunchScreen.storyboard in Resources */,
+				11D0208028ABF888005CDC00 /* download.png in Resources */,
+				11D0208328ABFF61005CDC00 /* Deltna in Resources */,
+				1148E81728ABA190002E5AD7 /* Deltna.png in Resources */,
 				1148E80B28ABA14F002E5AD7 /* Assets.xcassets in Resources */,
 				1148E80928ABA14D002E5AD7 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D0207C28ABB499005CDC00 /* SplashController.swift in Sources */,
 				1148E80628ABA14D002E5AD7 /* ViewController.swift in Sources */,
 				1148E80228ABA14D002E5AD7 /* AppDelegate.swift in Sources */,
 				1148E80428ABA14D002E5AD7 /* SceneDelegate.swift in Sources */,

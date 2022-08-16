@@ -8,22 +8,16 @@
 import UIKit
 
 class SplashController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
+        // wait 2 seconds and go to the next screen.
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
+            self.performSegue(withIdentifier: "LoginController", sender: nil)
+                
+    }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
