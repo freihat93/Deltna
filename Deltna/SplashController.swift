@@ -14,7 +14,7 @@ class SplashController: UIViewController {
             
         // wait 2 seconds and go to the next screen.
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
-            self.performSegue(withIdentifier: "LoginController", sender: nil)
+            
                 
     }
     }
