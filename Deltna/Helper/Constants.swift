@@ -13,7 +13,16 @@ struct Constants {
     struct Storyboard {
         
         static let homeViewController = "HomeVC"
-        
+        static let subscribtionViewController = "SubscribtionVC"
+        static let orderViewController = "OrderVC"
+        static let menuViewController = "MenuVC"
+        static let settingsViewController = "SettingsVC"
+        static let prfileViewController = "ProfileVC"
+        static let aboutViewController = "AboutVC"
+        static let loginViewController = "LoginVC"
+        static let signupViewController = "SingupVC"
+        static let restPasswordViewController = "RestVC"
+        static let tabBarViewController  = "TBVC"
     }
     
     

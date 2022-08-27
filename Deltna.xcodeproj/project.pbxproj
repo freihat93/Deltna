@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1139476A28B2BA6A00DCC22D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1139476928B2BA6A00DCC22D /* GoogleService-Info.plist */; };
 		113CDDF428B1203200F15117 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDF328B1203200F15117 /* Utilities.swift */; };
 		113CDDF728B1203600F15117 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDF628B1203600F15117 /* Constants.swift */; };
 		113CDDFB28B1206B00F15117 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDFA28B1206B00F15117 /* LoginViewController.swift */; };
@@ -26,10 +25,17 @@
 		11438E9F28B5483100079B8F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 11438E9E28B5483100079B8F /* FirebaseAuth */; };
 		11438EA128B5483100079B8F /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 11438EA028B5483100079B8F /* FirebaseAnalyticsSwift-Beta */; };
 		11438EA328B5483100079B8F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 11438EA228B5483100079B8F /* FirebaseFirestore */; };
+		11438EAE28B6936900079B8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11438EB028B6936900079B8F /* Localizable.strings */; };
+		11438EB628B6981D00079B8F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438EB528B6981C00079B8F /* SettingViewController.swift */; };
+		11438EB928B69BE600079B8F /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438EB828B69BE600079B8F /* LocalizationSystem.swift */; };
 		1148E80228ABA14D002E5AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80128ABA14D002E5AD7 /* AppDelegate.swift */; };
 		1148E80428ABA14D002E5AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */; };
-		1148E80628ABA14D002E5AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80528ABA14D002E5AD7 /* ViewController.swift */; };
+		1148E80628ABA14D002E5AD7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */; };
 		1148E80E28ABA14F002E5AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */; };
+		1157C01028B7B9AE0024EF9F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C00F28B7B9AE0024EF9F /* MenuViewController.swift */; };
+		1157C01528B7F2DE0024EF9F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C01428B7F2DE0024EF9F /* ProfileViewController.swift */; };
+		1157C01828B7F8050024EF9F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C01728B7F8050024EF9F /* AboutUsViewController.swift */; };
+		1157C02028B9448C0024EF9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1157C01F28B9448C0024EF9F /* GoogleService-Info.plist */; };
 		115B342528B269B900E4C220 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B342428B269B800E4C220 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +54,6 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
-		1139476928B2BA6A00DCC22D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		113CDDF328B1203200F15117 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		113CDDF628B1203600F15117 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		113CDDFA28B1206B00F15117 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -61,13 +66,23 @@
 		11438DCE28B3BA4900079B8F /* RestPasswordThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordThreeViewController.swift; sourceTree = "<group>"; };
 		11438E0F28B40E6F00079B8F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		11438E1228B4FFD100079B8F /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		11438EAF28B6936900079B8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11438EB528B6981C00079B8F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		11438EB828B69BE600079B8F /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		1148E7FE28ABA14D002E5AD7 /* Deltna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deltna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148E80128ABA14D002E5AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1148E80528ABA14D002E5AD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		1148E80D28ABA14F002E5AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1148E80F28ABA14F002E5AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1157C00F28B7B9AE0024EF9F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1157C01428B7F2DE0024EF9F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1157C01728B7F8050024EF9F /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		1157C01F28B9448C0024EF9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		115B342428B269B800E4C220 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		115DEF0728B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		115DEF0828B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		115DEF0928B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +105,7 @@
 		113CDDF128B11FFD00F15117 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				11438EB428B697F500079B8F /* Menu */,
 				11438DC928B3B8C400079B8F /* BeforLoginScreen */,
 				113CDE0428B1558400F15117 /* SubscribtionViewController.swift */,
 				115B342428B269B800E4C220 /* OrderViewController.swift */,
@@ -120,6 +136,26 @@
 			path = BeforLoginScreen;
 			sourceTree = "<group>";
 		};
+		11438EA728B6904300079B8F /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				11438EB028B6936900079B8F /* Localizable.strings */,
+				11438EB828B69BE600079B8F /* LocalizationSystem.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		11438EB428B697F500079B8F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				11438EB528B6981C00079B8F /* SettingViewController.swift */,
+				1157C00F28B7B9AE0024EF9F /* MenuViewController.swift */,
+				1157C01428B7F2DE0024EF9F /* ProfileViewController.swift */,
+				1157C01728B7F8050024EF9F /* AboutUsViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		1148E7F528ABA14C002E5AD7 = {
 			isa = PBXGroup;
 			children = (
@@ -139,16 +175,17 @@
 		1148E80028ABA14D002E5AD7 /* Deltna */ = {
 			isa = PBXGroup;
 			children = (
+				11438EA728B6904300079B8F /* Language */,
 				113CDDF228B1201B00F15117 /* Helper */,
 				113CDDF128B11FFD00F15117 /* View Controllers */,
 				1148E80128ABA14D002E5AD7 /* AppDelegate.swift */,
 				1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */,
-				1148E80528ABA14D002E5AD7 /* ViewController.swift */,
+				1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */,
 				11438DC528B3A23900079B8F /* Main.storyboard */,
 				11438DC028B39FB900079B8F /* Assets.xcassets */,
 				1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */,
 				1148E80F28ABA14F002E5AD7 /* Info.plist */,
-				1139476928B2BA6A00DCC22D /* GoogleService-Info.plist */,
+				1157C01F28B9448C0024EF9F /* GoogleService-Info.plist */,
 			);
 			path = Deltna;
 			sourceTree = "<group>";
@@ -203,6 +240,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 1148E7F528ABA14C002E5AD7;
 			packageReferences = (
@@ -222,8 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11438EAE28B6936900079B8F /* Localizable.strings in Resources */,
 				1148E80E28ABA14F002E5AD7 /* LaunchScreen.storyboard in Resources */,
-				1139476A28B2BA6A00DCC22D /* GoogleService-Info.plist in Resources */,
+				1157C02028B9448C0024EF9F /* GoogleService-Info.plist in Resources */,
 				11438DC128B39FB900079B8F /* Assets.xcassets in Resources */,
 				11438DC728B3A23900079B8F /* Main.storyboard in Resources */,
 			);
@@ -237,14 +276,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				11438DCF28B3BA4900079B8F /* RestPasswordThreeViewController.swift in Sources */,
+				11438EB928B69BE600079B8F /* LocalizationSystem.swift in Sources */,
 				113CDDFB28B1206B00F15117 /* LoginViewController.swift in Sources */,
 				115B342528B269B900E4C220 /* OrderViewController.swift in Sources */,
+				1157C01828B7F8050024EF9F /* AboutUsViewController.swift in Sources */,
 				113CDDFE28B1207C00F15117 /* SingupViewController.swift in Sources */,
 				11438E1328B4FFD100079B8F /* LogoutViewController.swift in Sources */,
+				1157C01528B7F2DE0024EF9F /* ProfileViewController.swift in Sources */,
+				11438EB628B6981D00079B8F /* SettingViewController.swift in Sources */,
 				113CDE0528B1558400F15117 /* SubscribtionViewController.swift in Sources */,
 				113CDDF728B1203600F15117 /* Constants.swift in Sources */,
-				1148E80628ABA14D002E5AD7 /* ViewController.swift in Sources */,
+				1148E80628ABA14D002E5AD7 /* TabBarViewController.swift in Sources */,
 				11438DCB28B3B95400079B8F /* RestPasswordTwoViewController.swift in Sources */,
+				1157C01028B7B9AE0024EF9F /* MenuViewController.swift in Sources */,
 				1148E80228ABA14D002E5AD7 /* AppDelegate.swift in Sources */,
 				113CDDF428B1203200F15117 /* Utilities.swift in Sources */,
 				113CDE0128B1209000F15117 /* RestPasswordViewController.swift in Sources */,
@@ -260,14 +304,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				11438DC628B3A23900079B8F /* Base */,
+				115DEF0728B79C0B007B68A9 /* ar */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11438EB028B6936900079B8F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11438EAF28B6936900079B8F /* en */,
+				115DEF0928B79C0B007B68A9 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1148E80D28ABA14F002E5AD7 /* Base */,
+				115DEF0828B79C0B007B68A9 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -279,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -341,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

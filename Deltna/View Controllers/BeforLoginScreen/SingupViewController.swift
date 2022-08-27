@@ -21,24 +21,53 @@ class SingupViewController: UIViewController {
     @IBOutlet weak var passwordTextFeield: UITextField!
     @IBOutlet weak var confirmPasswordTextFeield: UITextField!
     @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var loginHereButton: UIButton!
     
+    @IBOutlet weak var titelCreatLabel: UILabel!
+    @IBOutlet weak var subTitleCreatLabel: UILabel!
     @IBOutlet weak var firstNameError: UILabel!
     @IBOutlet weak var lastNameError: UILabel!
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var confirmPasswordError: UILabel!
+    @IBOutlet weak var alreadyHaveAnAccont: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUpElements()
+        //setupTextFields()
         
+        titelCreatLabel.text = "Let'sGetStarted".localizedT
+        
+        subTitleCreatLabel.text = "CreatAnAccontnt".localizedT
+        
+        firstNameTextFeield.placeholder = "FirstName".localizedT
+        
+        lastNameTextFeield.placeholder = "LastName".localizedT
+        
+        emailTextFeield.placeholder = "Email".localizedT
+        
+        phoneTextFeield.placeholder = "Phone".localizedT
+        
+        passwordTextFeield.placeholder = "Password".localizedT
+        
+        confirmPasswordTextFeield.placeholder = "ConfirmPassword".localizedT
+        
+        createButton.localizedTitle = "Create".localizedB
+        
+        loginHereButton.localizedTitle = "LoginHere".localizedB
      
+        alreadyHaveAnAccont.text = "AlreadyHaveAnAccont".localizedT
+        
+        
         
        
     }
-    
+
 
     func setUpElements() {
     
@@ -58,52 +87,99 @@ class SingupViewController: UIViewController {
         Utilities.styleFilledButton(createButton)
     }
 
+    @IBAction func emaulV(_ sender: Any){
+        let text = emailTextFeield.text ?? ""
+        if Utilities.validateEmailId(emailID: text) {
+            emailError.text = ""
+            emailError.textColor = UIColor.black
+        }else{
+            emailError.text = "Emailnotvaled".localizedT
+            emailError.textColor = UIColor.red
+        }
+    }
+//    @IBAction func phoneV(_ sender: Any){
+//        let text = phoneTextFeield.text ?? ""
+//        if Utilities.validaPhoneNumber(phoneNumber: text){
+//            phoneError.text = ""
+//            phoneError.textColor = UIColor.black
+//        }else{
+//            phoneError.text = "phonenot".localizedT
+//            emailError.textColor = UIColor.red
+//        }
+//    }
+    @IBAction func pass_act(_ sender: Any){
+        let text = passwordTextFeield.text ?? ""
+        if Utilities.isPasswordValid(text) {
+            passwordError.text = "StrongPassword".localizedT
+            passwordError.textColor = UIColor.green
+        }else{
+            passwordError.text = "Weakpassword".localizedT
+            emailError.textColor = UIColor.red
+        }
+    }
+    @IBAction func comPass_act(_ sender: Any){
+        let text = confirmPasswordTextFeield.text ?? ""
+        if Utilities.isConfirmPasswordValid(text) {
+            confirmPasswordError.text = "StrongPassword".localizedT
+            confirmPasswordError.textColor = UIColor.green
+        }else{
+            confirmPasswordError.text = "Weakpassword".localizedT
+            emailError.textColor = UIColor.red
+        }
+        if passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == confirmPasswordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) {
+            self.passwordError.text = "PasswordMatch".localizedT
+            self.confirmPasswordError.text = "PasswordMatch".localizedT
+            self.passwordError.textColor = UIColor.green
+            self.confirmPasswordError.textColor = UIColor.green
+        }else{
+            self.passwordError.text = "PasswordDon'tMatch".localizedT
+            self.confirmPasswordError.text = "PasswordDon'tMatch".localizedT
+            self.passwordError.textColor = UIColor.red
+            self.confirmPasswordError.textColor = UIColor.red
+                }
+    }
+   
+    
+    
     func validateFields() -> String? {
         
-        //Text field not emty
-        if firstNameTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            firstNameError.text = "Please fill"
-        }else{
-            firstNameError.text = ""
-        }
-        if lastNameTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            lastNameError.text = "Please l"
-        }else{
-            lastNameError.text = ""
-        }
-        if phoneTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            phoneError.text = "Please ph"
-        }else{
-            phoneError.text = ""
-        }
-        if emailTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            emailError.text = "Please e"
-        }else{
-            emailError.text = ""
-        }
-        if passwordTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            passwordError.text = "Please ph"
-        }else{
-            passwordError.text = ""
-        }
-        if confirmPasswordTextFeield.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            confirmPasswordError.text = "Please e"
-        }else{
-            confirmPasswordError.text = ""
-        }
-        if passwordTextFeield != confirmPasswordTextFeield {
-            self.MatchPasswordAlert("")
+       
+        if firstNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            self.firstNameError.text = "firstNameError".localizedT
+            //"First Name is Emtey"
         }
         
-        //password req
-        let cleanedPassword = passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if lastNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            self.lastNameError.text = "lastNameError".localizedT
+            //"Last Name is Emtey"
+        }
         
-        if Utilities.isPasswordValid(cleanedPassword) == false {
-            self.PasswordValidAlert("")
+       
+        if emailTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == ""  {
+            self.emailError.text = "emailError".localizedT
+            //"E-mail is Emtey"
         }
         
         
+        if phoneTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            self.phoneError.text =
+                "phoneError".localizedT
+            //"Phone is not valed"
+        }
         
+       
+        if passwordTextFeield.text! ==  "" {
+            self.passwordError.text =
+                "passwordError".localizedT
+            //"Password is Emtey"
+        }
+        if confirmPasswordTextFeield.text! == "" {
+            self.confirmPasswordError.text = "confirmPasswordError".localizedT
+        }
+       
+
+
+
         return nil
     }
     
@@ -112,10 +188,11 @@ class SingupViewController: UIViewController {
         //Validate the field
         let error = validateFields()
         
-        if error != nil {
-            
-            showError(error!)
         
+        if error != nil {
+
+            showError(error!)
+
         }
         else{
             let firstName = firstNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -125,41 +202,57 @@ class SingupViewController: UIViewController {
             
             let phoneNumber = phoneTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-            let password = firstNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             
-            Auth.auth().createUser(withEmail: email, password: password){ (result, err) in
+            //Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, err in
               
               
             
                 
                 if err != nil {
-                    
+
                     self.showErrorAlertCreate("")
                     
+
                 }
                 else{
                     
                     let db = Firestore.firestore()
-                    
-                    
-                    db.collection("users").addDocument(data: ["farstNmae":firstName,"lastNmae" :lastName,"phoneNumber":phoneNumber,"uid" : result!.user.uid]) { (error) in
-                        
+//
+//                    var ref : DocumentReference? = nil
+//                    ref = db.collection("users").addDocument(data: ["FirstName":firstName,
+//                                                                    "LastName" :lastName,
+//                                                                    "phone":phoneNumber]) { error in
+//                        if error != nil {
+                                                             
+                    db.collection("users").addDocument(data: ["FirstName":firstName,"LastName" :lastName,"phone":phoneNumber, "uid": authResult!.user.uid]) { (error) in
+
                         if error != nil {
                             self.showErrorAlertDB("")
                         }
                         
                     }
-                    //self.transitionToHome(Sender: )
+                    
+                    //transitionToHome
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+                    
+                    self.view.window?.rootViewController = homeViewController
+                    self.view.window?.makeKeyAndVisible()
+                    
+                    self.cleenTextFeield()
                 }
                 
-            }
-            
+          }
+
         }
-        
-    }
+        //cleenTextFeield()
+   }
     func showErrorAlertCreate(_ message:String) {
-        let alert = UIAlertController(title: "Error", message: "Error creating user", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error"
+                                      , message: "Error creating user",
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel ))
         present(alert, animated: true)
     }
@@ -168,16 +261,8 @@ class SingupViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel ))
         present(alert, animated: true)
     }
-    func MatchPasswordAlert(_ message:String) {
-        let alert = UIAlertController(title: "Error", message: "Password don't match. Please try again", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel ))
-        present(alert, animated: true)
-    }
-    func PasswordValidAlert(_ message:String) {
-        let alert = UIAlertController(title: "Error", message: "Please make sure your password at lest 8 chatacters, contains a special character and a number.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel ))
-        present(alert, animated: true)
-    }
+ 
+ 
     func CompleteCreateUserAlert(_ message:String) {
         let alert = UIAlertController(title: "Error", message: "Created Successfully.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel ))
@@ -203,13 +288,80 @@ class SingupViewController: UIViewController {
         confirmPasswordError.alpha = 1
     }
     
-    func transitionToHome(Sender: UIButton!) {
-        
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
-
+    func cleenTextFeield (){
+        firstNameTextFeield.text = ""
+        lastNameTextFeield.text = ""
+        phoneTextFeield.text = ""
+        emailTextFeield.text = ""
+        passwordTextFeield.text = ""
+        passwordTextFeield.text = ""
+        passwordError.text = ""
+        confirmPasswordError.text = ""
     }
     
+    @IBAction func signupHereButton(_ sender: UIButton) {
+        
+        let loginViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
+
+        self.view.window?.rootViewController = loginViewController
+        self.view.window?.makeKeyAndVisible()
+    }
 }
+
+
+
+
+
+
+
+
+
+
+//        let Password = passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//               if Utilities.isPasswordValid(Password) == false {
+//                   self.passwordError.text = ("8 characters long at least 1 uppercase, 1 lowercase, 1 Number and 1 special characters")
+//               }
+//               let ConfirmPassword = confirmPasswordTextFeield.text ?? ""
+//               if Utilities.isConfirmPasswordValid(ConfirmPassword) == false {
+//                   self.confirmPasswordError.text = ("8 characters long at least 1 uppercase, 1 lowercase, 1 Number and 1 special characters")
+//               }
+
+//        if passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) != confirmPasswordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) {
+//            self.confirmPasswordError.text = ("Passwor don't match")
+//        }
+
+//Text field not emty
+//        let FirstName = firstNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.validateNameF(FirstName) == false {
+//            self.firstNameError.text = "First Name is Emtey"
+//        }
+//
+//        let LastName = lastNameTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.validateNameL(LastName) == false {
+//            self.lastNameError.text = "Last Name is Emtey"
+//        }
+//
+//        let Email = emailTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.validateEmailId(emailID: Email) == false {
+//            self.emailError.text = "E-mail is Emtey"
+//        }
+//
+//        let Phone = phoneTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.validaPhoneNumber(phoneNumber: Phone) == false {
+//            self.phoneError.text = "Phone is not valed"
+//        }
+
+//password req
+
+//        let Password = passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.isPasswordValid(Password) == false {
+//            self.passwordError.text = ("8 characters long at least 1 uppercase, 1 lowercase, 1 Number and 1 special characters")
+//        }
+//        let ConfirmPassword = confirmPasswordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+//        if Utilities.isConfirmPasswordValid(ConfirmPassword) == false {
+//            self.confirmPasswordError.text = ("8 characters long at least 1 uppercase, 1 lowercase, 1 Number and 1 special characters")
+//        }
+//
+//        if passwordTextFeield != confirmPasswordTextFeield {
+//            self.PasswordValidAlert("")
+//        }

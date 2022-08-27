@@ -6,7 +6,10 @@
 //
 
 import UIKit
-
+import MapKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 
 class SubscribtionViewController: UIViewController {
@@ -62,6 +65,31 @@ class SubscribtionViewController: UIViewController {
         
     }
     
+    @IBAction func buyButton(_ sender: UIButton) {
+        let Compane = companeNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let address = addressTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let building = buildingTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+//
+        
+        let db = Firestore.firestore()
+        
+        var ref: DocumentReference? = nil
+        ref = db.collection("users").addDocument(data: [
+            "address": "address",
+            "Compane": "Compane",
+            "building": 34
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        
+        
+    }
     
 
 }

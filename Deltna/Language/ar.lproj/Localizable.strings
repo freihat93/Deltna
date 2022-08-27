@@ -1,0 +1,102 @@
+
+
+//login View Controller
+"WelcomeBack" = "مرحبا في عودتك";
+"Email" = "البريد الالكتروني";
+"Password" = "كلمة السر";
+"ForgetPassword" = "نسيت كلمة السر";
+"LogIn" = "تسجيل الدخول";
+"OrSignInWith" = "او تسجيل الدخول بستخدام";
+"Don'tHaveAccont?" = "ليس لديك حساب؟";
+"SingUp" = "تسجيل";
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//Singup View Controller
+"Let'sGetStarted" = "هيا بنا نبداء";
+"CreatAnAccontnt" = "لانشاء مسخدم";
+//"Password" = "Password";
+"ConfirmPassword" = "تاكيد كلمة السر";
+"Create" = "انشاء";
+"LoginHere" = "تسجيل الدخول";
+"AlreadyHaveAnAccont" = "هل لديك حساب؟";
+
+//v
+"Emailnotvaled" = "البريد الكتروني غير صحيح";
+"phonenot" = "يجب ان يكون ١٠ خانات";
+"StrongPassword" = "كلمة السر قوية";
+"Weakpassword" = "كلمة السر ضعيفة";
+
+//Singup View Controller Error
+"PasswordDon'tMatch" = "كلمة السر غير متطابقة";
+"PasswordMatch" = "كلمة السر متطابقة";
+"firstNameError" =  "السم الاول فارغ";
+"lastNameError" = "السم الخير فارغ";
+"emailError" = "البريد الالكتروني فارغ";
+"phoneError" = "رقم الهاتف فارغ";
+"passwordError" = "كلمة السر فارغة";
+"confirmPasswordError" = "تاكيد كلمة السر فارغة";
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//MenuViewController
+"Profile" = "الملف الشخصي";
+"AboutUs" = "معلومات عنا";
+"Menu" = "القامة";
+"GetHelp" = "للمساعدة";
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+
+//SettingViewController
+"Accountinfo" = "معلومات المستخدم";
+"ChangePassword" = "تغير كلمة السر";
+"Language" = "الغة";
+"logout" = "خروج";
+"Settings" = "اعدادت";
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//Profile View Controller
+"Profile" = "الملف الشخصي";
+"Edit" = "تعديل";
+"FirstName" = "السم الاول";
+"LastName" = "الاسم الخير";
+"Phone" = "رقم الهاتف";
+"DeleteAccount" = "حذف الملف الشخصي";
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+//About us view Controller
+
+"FAQ" = "FAQ";
+
+"PrivacyPolicy" = "Privacy policy";
+
+"TermsOfUse" = "Terms of use";

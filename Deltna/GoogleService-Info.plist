@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>122707205776-55j5pb3u79dfn0dmu270qfa0gdimebbp.apps.googleusercontent.com</string>
+	<string>680598770477-3lfiecp1g3eroprmj0j90cn9iuj9erum.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.122707205776-55j5pb3u79dfn0dmu270qfa0gdimebbp</string>
+	<string>com.googleusercontent.apps.680598770477-3lfiecp1g3eroprmj0j90cn9iuj9erum</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAfq5jF4fQLVoRzL3OImfj54DmCd90qr10</string>
+	<string>AIzaSyDIK5pW_teyFum0dITu7mIdk180iOZ47ZU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>122707205776</string>
+	<string>680598770477</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Deltna.Deltna</string>
 	<key>PROJECT_ID</key>
-	<string>deltna-16381</string>
+	<string>deltna-7dbcd</string>
 	<key>STORAGE_BUCKET</key>
-	<string>deltna-16381.appspot.com</string>
+	<string>deltna-7dbcd.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:122707205776:ios:7a05bcd55564481e664215</string>
+	<string>1:680598770477:ios:3de17fe3449666f1b6b9a4</string>
 </dict>
 </plist>

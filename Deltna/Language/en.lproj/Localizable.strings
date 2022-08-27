@@ -1,0 +1,100 @@
+
+//login View Controller
+"WelcomeBack" = "Welcome Back";
+"Email" = "Email";
+"Password" = "Password";
+"ForgetPassword" = "Forget password";
+"LogIn" = "LogIn";
+"OrSignInWith" = "Or sign in with";
+"Don'tHaveAccont?" = "Don't have accont?";
+"SingUp" = "SingUp";
+
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//Singup View Controller
+"Let'sGetStarted" = "Let's Get Started";
+"CreatAnAccontnt" = "Creat an accontnt";
+"Password" = "Password";
+"ConfirmPassword" = "Confirm Password";
+"Create" = "Create";
+"LoginHere" = "LoginHere";
+"AlreadyHaveAnAccont" = "Already have an accont?";
+//v
+"Emailnotvaled" = "Email not valed";
+"phonenot" = "phone not";
+"StrongPassword" ="Strong Password";
+"Weakpassword" = "Weak password";
+
+//Singup View Controller Error
+"PasswordDon'tMatch" = "Password Don't Match";
+"PasswordMatch" = "Password Match";
+"firstNameError" =  "First Name is Emtey";
+"lastNameError" = "Last Name is Emtey";
+"emailError" = "Email is Emtey";
+"phoneError" = "Phone is Emtey";
+"passwordError" = "Password is Emtey";
+"confirmPasswordError" = "Confirm password is Emtey";
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//Menu View Controller
+"Profile" = "Profile";
+"AboutUs" = "About Us";
+"Menu" = "Menu";
+"GetHelp" = "Get Help";
+
+///////////////////////////////////////////////////////////////
+
+
+
+//Setting View Controller
+"Accountinfo" = "Account info";
+"ChangePassword" = "Change Password";
+"Language" = "Language";
+"logout" = "logout";
+"Settings" = "Settings";
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//Profile View Controller
+"Profile" = "Profile";
+"Edit" = "Edit";
+"FirstName" = "First Name";
+"LastName" = "LastName";
+"Phone" = "Phone";
+"DeleteAccount" = "Delete Account";
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+//About us view Controller
+
+"AboutUs" = "About Us";
+
+"FAQ" = "FAQ";
+
+"PrivacyPolicy" = "Privacy policy";
+
+"TermsOfUse" = "Terms of use";

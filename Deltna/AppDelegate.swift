@@ -13,7 +13,7 @@ import FirebaseAuth
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let db = Firestore.firestore()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -38,3 +38,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension String {
+    var localizedT: String {
+        return NSLocalizedString(self, comment: "")
+    }
+}
+
+extension UIButton {
+    @IBInspectable var localizedTitle: String {
+        get { return "" }
+        set {
+            self.setTitle(newValue.localizedB, for: .normal)
+        }
+    }
+}
+
+extension String {
+    var localizedB: String {
+        get { return NSLocalizedString(self, comment: "") }
+    }
+}
