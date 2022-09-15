@@ -92,6 +92,10 @@ class OrderViewController: UIViewController {
         
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+        self.tabBarController?.tabBar.isHidden = false
+    }
     
 
 }

@@ -16,13 +16,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
 
     @IBOutlet weak var loginButton: UIButton!
-
-    @IBOutlet weak var orSingLabel: UILabel!
     
     @IBOutlet weak var singupButton: UIButton!
     @IBOutlet weak var dontLabel: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
 
         setUpElements()
@@ -30,14 +34,13 @@ class LoginViewController: UIViewController {
         welcomLabel.text = "WelcomeBack".localizedT
         
         emailTextField.placeholder = "Email".localizedT
-        
+        //emailError.text = "emailError".localizedT
         passwordTextField.placeholder = "Password".localizedT
+        //passwordError.text = "passwordError".localizedT
         
         forgetPasswordButton.localizedTitle = "ForgetPassword".localizedB
         
         loginButton.localizedTitle = "LogIn".localizedB
-        
-        orSingLabel.text = "OrSignInWith".localizedT
         
         dontLabel.text = "Don'tHaveAccont?".localizedT
         
@@ -56,29 +59,29 @@ class LoginViewController: UIViewController {
 
         Utilities.styleFilledButton(loginButton)
     }
-    func validateFields() {
+    func validateFields() -> String? {
 
         //Text field not emty
 
 
-        if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            emailError.text = "emailError".localizedT
-        }else{
-            emailError.text = ""
+        if emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines) == ""  {
+            self.emailError.text = "emailError".localizedT
+            //"E-mail is Emtey"
         }
-        if passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            passwordError.text = "passwordError".localizedT
-        }else{
-            passwordError.text = ""
+        
+        if passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            self.passwordError.text = "passwordError".localizedT
         }
-
+        
+        return nil
     }
     @IBAction func loginButton(_ sender: Any) {
 
-
+        
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-
+        self.validateFields()
+        
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
 
 
@@ -91,18 +94,25 @@ class LoginViewController: UIViewController {
 
             }
             else{
-
-                let tabBarViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarViewController) as?
-                    HomeViewController
                 
-                self.view.window?.rootViewController = tabBarViewController
-                self.view.window?.makeKeyAndVisible()
 
+
+                let tabBarController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarController) as?
+                    TabBarController
+                
+                self.view.window?.rootViewController = tabBarController
+                self.view.window?.makeKeyAndVisible()
+                
+                self.cleenTextFeield()
 
 
             }
         }
-        }
+        
+    
+    }
+    
+    
 
     func LoginErrorAlert(_ message:String) {
         let alert = UIAlertController(title: "Error", message: "Email or Password is incorrect", preferredStyle: .alert)
@@ -120,6 +130,14 @@ class LoginViewController: UIViewController {
         passwordError.alpha = 1
 
 }
+    
+    func cleenTextFeield (){
+        emailTextField.text = ""
+        passwordTextField.text = ""
+       
+    }
+    
+    
 
     @IBAction func signupButton(_ sender: UIButton) {
         
@@ -137,5 +155,8 @@ class LoginViewController: UIViewController {
         view.window?.makeKeyAndVisible()
     }
     
+    
+    
 
 }
+

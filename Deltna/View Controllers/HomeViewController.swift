@@ -9,38 +9,60 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var subscriptinButton: UIControl!{
-        didSet{
-            subscriptinButton .layer.cornerRadius = 5
-        }
-    }
+    @IBOutlet weak var subscriptinButton: UIControl!
+   
     
-    @IBOutlet weak var orderButton: UIView!{
-        didSet{
-            orderButton.layer.cornerRadius = 5
-        }
-    }
+    
+    
+    @IBOutlet weak var orderButton: UIControl!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpElements()
     }
+    
+    
+    func setUpElements() {
+
+
+        Utilities.styleView(subscriptinButton)
+        Utilities.styleView(orderButton)
+
+
+    }
+    
+   
+    
+    
     
     @IBAction func onClickSubscriptionButton(_ sender: Any) {
         
-        let subscribtionViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.subscribtionViewController) as? SubscribtionViewController
+//        let subscribtionViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.subscribtionViewController) as? SubscribtionViewController
+//
+//        self.view.window?.rootViewController = subscribtionViewController
+//        self.view.window?.makeKeyAndVisible()
+        
+        let subscribtionViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.subscribtionViewController) as!
+            SubscribtionViewController
 
-        self.view.window?.rootViewController = subscribtionViewController
-        self.view.window?.makeKeyAndVisible()
+        self.navigationController?.pushViewController(subscribtionViewController, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     @IBAction func onClickOrderButton(_ sender: Any) {
         
-        let orderViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.orderViewController) as? OrderViewController
+//        let orderViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.orderViewController) as? OrderViewController
+//
+//        self.view.window?.rootViewController = orderViewController
+//        self.view.window?.makeKeyAndVisible()
+        
+        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.orderViewController) as!
+            OrderViewController
 
-        self.view.window?.rootViewController = orderViewController
-        self.view.window?.makeKeyAndVisible()
+        self.navigationController?.pushViewController(orderViewController, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
     }
     
 

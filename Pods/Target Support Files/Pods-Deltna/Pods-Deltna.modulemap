@@ -1,0 +1,6 @@
+framework module Pods_Deltna {
+  umbrella header "Pods-Deltna-umbrella.h"
+
+  export *
+  module * { export * }
+}

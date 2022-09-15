@@ -3,40 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1107ECCB28BCD9AF00D41A4F /* Subscribtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107ECCA28BCD9AF00D41A4F /* Subscribtion.swift */; };
+		1107ECD528BD2E0D00D41A4F /* EditSubscribtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107ECD428BD2E0D00D41A4F /* EditSubscribtion.swift */; };
+		1107ECDC28BD36F500D41A4F /* EditSubscribtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107ECDB28BD36F500D41A4F /* EditSubscribtionViewController.swift */; };
 		113CDDF428B1203200F15117 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDF328B1203200F15117 /* Utilities.swift */; };
 		113CDDF728B1203600F15117 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDF628B1203600F15117 /* Constants.swift */; };
 		113CDDFB28B1206B00F15117 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDFA28B1206B00F15117 /* LoginViewController.swift */; };
 		113CDDFE28B1207C00F15117 /* SingupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDDFD28B1207C00F15117 /* SingupViewController.swift */; };
 		113CDE0128B1209000F15117 /* RestPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDE0028B1209000F15117 /* RestPasswordViewController.swift */; };
 		113CDE0528B1558400F15117 /* SubscribtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CDE0428B1558400F15117 /* SubscribtionViewController.swift */; };
+		113D579728C0CD7900B21D33 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D579628C0CD7900B21D33 /* TabBarController.swift */; };
+		113D579A28C0CED400B21D33 /* YourSubscribtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D579928C0CED400B21D33 /* YourSubscribtionViewController.swift */; };
+		113D579F28C3962E00B21D33 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D579E28C3962E00B21D33 /* OnboardingViewController.swift */; };
+		113D57A328C39A5A00B21D33 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D57A228C39A5A00B21D33 /* OnboardingSlide.swift */; };
+		113D57A728C39E6700B21D33 /* OnboardingViewControllerCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D57A628C39E6700B21D33 /* OnboardingViewControllerCellCollectionViewCell.swift */; };
+		113F824228CCB7E7005F739F /* SubscribtionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F824128CCB7E7005F739F /* SubscribtionsViewModel.swift */; };
 		11438DC128B39FB900079B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11438DC028B39FB900079B8F /* Assets.xcassets */; };
 		11438DC728B3A23900079B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11438DC528B3A23900079B8F /* Main.storyboard */; };
 		11438DCB28B3B95400079B8F /* RestPasswordTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438DCA28B3B95400079B8F /* RestPasswordTwoViewController.swift */; };
 		11438DCF28B3BA4900079B8F /* RestPasswordThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438DCE28B3BA4900079B8F /* RestPasswordThreeViewController.swift */; };
 		11438E1028B40E6F00079B8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438E0F28B40E6F00079B8F /* HomeViewController.swift */; };
-		11438E1328B4FFD100079B8F /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438E1228B4FFD100079B8F /* LogoutViewController.swift */; };
-		11438E9928B5483100079B8F /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 11438E9828B5483100079B8F /* FirebaseFirestoreCombine-Community */; };
-		11438E9B28B5483100079B8F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 11438E9A28B5483100079B8F /* FirebaseAnalytics */; };
-		11438E9D28B5483100079B8F /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 11438E9C28B5483100079B8F /* FirebaseFirestoreSwift-Beta */; };
-		11438E9F28B5483100079B8F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 11438E9E28B5483100079B8F /* FirebaseAuth */; };
-		11438EA128B5483100079B8F /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 11438EA028B5483100079B8F /* FirebaseAnalyticsSwift-Beta */; };
-		11438EA328B5483100079B8F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 11438EA228B5483100079B8F /* FirebaseFirestore */; };
 		11438EAE28B6936900079B8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11438EB028B6936900079B8F /* Localizable.strings */; };
 		11438EB628B6981D00079B8F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438EB528B6981C00079B8F /* SettingViewController.swift */; };
 		11438EB928B69BE600079B8F /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11438EB828B69BE600079B8F /* LocalizationSystem.swift */; };
+		11478B1028C78EAB003FA36A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B0F28C78EA9003FA36A /* UIView+Extension.swift */; };
+		11478B1428C79356003FA36A /* WeeklysubbscriptionNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B1328C79356003FA36A /* WeeklysubbscriptionNoticeViewController.swift */; };
+		11478B1828C793FC003FA36A /* PaymentNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B1728C793FC003FA36A /* PaymentNoticeViewController.swift */; };
+		11478B1B28C79416003FA36A /* ArabicNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B1A28C79416003FA36A /* ArabicNoticeViewController.swift */; };
+		11478B1E28C7943A003FA36A /* SaudiNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B1D28C7943A003FA36A /* SaudiNoticeViewController.swift */; };
+		11478B2E28C7B31B003FA36A /* UserInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11478B2D28C7B31B003FA36A /* UserInfos.swift */; };
 		1148E80228ABA14D002E5AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80128ABA14D002E5AD7 /* AppDelegate.swift */; };
 		1148E80428ABA14D002E5AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */; };
-		1148E80628ABA14D002E5AD7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */; };
+		1148E80628ABA14D002E5AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148E80528ABA14D002E5AD7 /* ViewController.swift */; };
 		1148E80E28ABA14F002E5AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */; };
 		1157C01028B7B9AE0024EF9F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C00F28B7B9AE0024EF9F /* MenuViewController.swift */; };
 		1157C01528B7F2DE0024EF9F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C01428B7F2DE0024EF9F /* ProfileViewController.swift */; };
 		1157C01828B7F8050024EF9F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C01728B7F8050024EF9F /* AboutUsViewController.swift */; };
 		1157C02028B9448C0024EF9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1157C01F28B9448C0024EF9F /* GoogleService-Info.plist */; };
+		1157C0B528BB923D0024EF9F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157C0B428BB923D0024EF9F /* MapViewController.swift */; };
 		115B342528B269B900E4C220 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B342428B269B800E4C220 /* OrderViewController.swift */; };
+		2B3EBA51D867DCEC611A51B2 /* Pods_Deltna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED99D056A62274B10B2BC80C /* Pods_Deltna.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -54,35 +64,53 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		1107ECCA28BCD9AF00D41A4F /* Subscribtion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscribtion.swift; sourceTree = "<group>"; };
+		1107ECD428BD2E0D00D41A4F /* EditSubscribtion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubscribtion.swift; sourceTree = "<group>"; };
+		1107ECDB28BD36F500D41A4F /* EditSubscribtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubscribtionViewController.swift; sourceTree = "<group>"; };
 		113CDDF328B1203200F15117 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		113CDDF628B1203600F15117 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		113CDDFA28B1206B00F15117 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		113CDDFD28B1207C00F15117 /* SingupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupViewController.swift; sourceTree = "<group>"; };
 		113CDE0028B1209000F15117 /* RestPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordViewController.swift; sourceTree = "<group>"; };
 		113CDE0428B1558400F15117 /* SubscribtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribtionViewController.swift; sourceTree = "<group>"; };
+		113D579628C0CD7900B21D33 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		113D579928C0CED400B21D33 /* YourSubscribtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourSubscribtionViewController.swift; sourceTree = "<group>"; };
+		113D579E28C3962E00B21D33 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		113D57A228C39A5A00B21D33 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		113D57A628C39E6700B21D33 /* OnboardingViewControllerCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		113F824128CCB7E7005F739F /* SubscribtionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribtionsViewModel.swift; sourceTree = "<group>"; };
 		11438DC028B39FB900079B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11438DC628B3A23900079B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11438DCA28B3B95400079B8F /* RestPasswordTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordTwoViewController.swift; sourceTree = "<group>"; };
 		11438DCE28B3BA4900079B8F /* RestPasswordThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordThreeViewController.swift; sourceTree = "<group>"; };
 		11438E0F28B40E6F00079B8F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		11438E1228B4FFD100079B8F /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		11438EAF28B6936900079B8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11438EB528B6981C00079B8F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		11438EB828B69BE600079B8F /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		11478B0F28C78EA9003FA36A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		11478B1328C79356003FA36A /* WeeklysubbscriptionNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklysubbscriptionNoticeViewController.swift; sourceTree = "<group>"; };
+		11478B1728C793FC003FA36A /* PaymentNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentNoticeViewController.swift; sourceTree = "<group>"; };
+		11478B1A28C79416003FA36A /* ArabicNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicNoticeViewController.swift; sourceTree = "<group>"; };
+		11478B1D28C7943A003FA36A /* SaudiNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaudiNoticeViewController.swift; sourceTree = "<group>"; };
+		11478B2D28C7B31B003FA36A /* UserInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfos.swift; sourceTree = "<group>"; };
 		1148E7FE28ABA14D002E5AD7 /* Deltna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deltna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148E80128ABA14D002E5AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1148E80528ABA14D002E5AD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1148E80D28ABA14F002E5AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1148E80F28ABA14F002E5AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1157C00F28B7B9AE0024EF9F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1157C01428B7F2DE0024EF9F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1157C01728B7F8050024EF9F /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		1157C01F28B9448C0024EF9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1157C0B428BB923D0024EF9F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		115B342428B269B800E4C220 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		115DEF0728B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		115DEF0828B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		115DEF0928B79C0B007B68A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1B279E459FB11457F4DDF435 /* Pods-Deltna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deltna.release.xcconfig"; path = "Target Support Files/Pods-Deltna/Pods-Deltna.release.xcconfig"; sourceTree = "<group>"; };
+		CAA24929619399E2C0356F02 /* Pods-Deltna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deltna.debug.xcconfig"; path = "Target Support Files/Pods-Deltna/Pods-Deltna.debug.xcconfig"; sourceTree = "<group>"; };
+		ED99D056A62274B10B2BC80C /* Pods_Deltna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deltna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,27 +118,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11438EA128B5483100079B8F /* FirebaseAnalyticsSwift-Beta in Frameworks */,
-				11438E9D28B5483100079B8F /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				11438E9B28B5483100079B8F /* FirebaseAnalytics in Frameworks */,
-				11438E9928B5483100079B8F /* FirebaseFirestoreCombine-Community in Frameworks */,
-				11438E9F28B5483100079B8F /* FirebaseAuth in Frameworks */,
-				11438EA328B5483100079B8F /* FirebaseFirestore in Frameworks */,
+				2B3EBA51D867DCEC611A51B2 /* Pods_Deltna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1107ECC928BCD97B00D41A4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1107ECCA28BCD9AF00D41A4F /* Subscribtion.swift */,
+				1107ECD428BD2E0D00D41A4F /* EditSubscribtion.swift */,
+				113D57A228C39A5A00B21D33 /* OnboardingSlide.swift */,
+				113F824128CCB7E7005F739F /* SubscribtionsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1135EDA928D200F200D3E7F7 /* Subscribtion */ = {
+			isa = PBXGroup;
+			children = (
+				113CDE0428B1558400F15117 /* SubscribtionViewController.swift */,
+				113D579928C0CED400B21D33 /* YourSubscribtionViewController.swift */,
+				1107ECDB28BD36F500D41A4F /* EditSubscribtionViewController.swift */,
+			);
+			path = Subscribtion;
+			sourceTree = "<group>";
+		};
 		113CDDF128B11FFD00F15117 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1135EDA928D200F200D3E7F7 /* Subscribtion */,
+				113D579D28C395F200B21D33 /* Onboarding */,
+				11478B1228C79301003FA36A /* Notice */,
 				11438EB428B697F500079B8F /* Menu */,
 				11438DC928B3B8C400079B8F /* BeforLoginScreen */,
-				113CDE0428B1558400F15117 /* SubscribtionViewController.swift */,
 				115B342428B269B800E4C220 /* OrderViewController.swift */,
 				11438E0F28B40E6F00079B8F /* HomeViewController.swift */,
-				11438E1228B4FFD100079B8F /* LogoutViewController.swift */,
+				1157C0B428BB923D0024EF9F /* MapViewController.swift */,
+				113D579628C0CD7900B21D33 /* TabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -120,8 +167,19 @@
 			children = (
 				113CDDF628B1203600F15117 /* Constants.swift */,
 				113CDDF328B1203200F15117 /* Utilities.swift */,
+				11478B0F28C78EA9003FA36A /* UIView+Extension.swift */,
+				11478B2D28C7B31B003FA36A /* UserInfos.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		113D579D28C395F200B21D33 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				113D579E28C3962E00B21D33 /* OnboardingViewController.swift */,
+				113D57A628C39E6700B21D33 /* OnboardingViewControllerCellCollectionViewCell.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		11438DC928B3B8C400079B8F /* BeforLoginScreen */ = {
@@ -156,11 +214,24 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		11478B1228C79301003FA36A /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				11478B1328C79356003FA36A /* WeeklysubbscriptionNoticeViewController.swift */,
+				11478B1728C793FC003FA36A /* PaymentNoticeViewController.swift */,
+				11478B1A28C79416003FA36A /* ArabicNoticeViewController.swift */,
+				11478B1D28C7943A003FA36A /* SaudiNoticeViewController.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
 		1148E7F528ABA14C002E5AD7 = {
 			isa = PBXGroup;
 			children = (
 				1148E80028ABA14D002E5AD7 /* Deltna */,
 				1148E7FF28ABA14D002E5AD7 /* Products */,
+				171D2C090DC2E50374D7B57C /* Pods */,
+				9A4EDEB844898655E522E02A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,12 +246,13 @@
 		1148E80028ABA14D002E5AD7 /* Deltna */ = {
 			isa = PBXGroup;
 			children = (
+				1107ECC928BCD97B00D41A4F /* Models */,
 				11438EA728B6904300079B8F /* Language */,
 				113CDDF228B1201B00F15117 /* Helper */,
 				113CDDF128B11FFD00F15117 /* View Controllers */,
 				1148E80128ABA14D002E5AD7 /* AppDelegate.swift */,
 				1148E80328ABA14D002E5AD7 /* SceneDelegate.swift */,
-				1148E80528ABA14D002E5AD7 /* TabBarViewController.swift */,
+				1148E80528ABA14D002E5AD7 /* ViewController.swift */,
 				11438DC528B3A23900079B8F /* Main.storyboard */,
 				11438DC028B39FB900079B8F /* Assets.xcassets */,
 				1148E80C28ABA14F002E5AD7 /* LaunchScreen.storyboard */,
@@ -190,6 +262,23 @@
 			path = Deltna;
 			sourceTree = "<group>";
 		};
+		171D2C090DC2E50374D7B57C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAA24929619399E2C0356F02 /* Pods-Deltna.debug.xcconfig */,
+				1B279E459FB11457F4DDF435 /* Pods-Deltna.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A4EDEB844898655E522E02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED99D056A62274B10B2BC80C /* Pods_Deltna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1148E81228ABA14F002E5AD7 /* Build configuration list for PBXNativeTarget "Deltna" */;
 			buildPhases = (
+				CB9C0E1BFF320347FD33C72A /* [CP] Check Pods Manifest.lock */,
 				1148E7FA28ABA14C002E5AD7 /* Sources */,
 				1148E7FB28ABA14C002E5AD7 /* Frameworks */,
 				1148E7FC28ABA14C002E5AD7 /* Resources */,
+				11C0E8058A6377480A8E4A3F /* [CP] Embed Pods Frameworks */,
+				60C74D109F41208D3047466C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 				11438E5B28B5445F00079B8F /* PBXBuildRule */,
@@ -207,14 +299,6 @@
 			dependencies = (
 			);
 			name = Deltna;
-			packageProductDependencies = (
-				11438E9828B5483100079B8F /* FirebaseFirestoreCombine-Community */,
-				11438E9A28B5483100079B8F /* FirebaseAnalytics */,
-				11438E9C28B5483100079B8F /* FirebaseFirestoreSwift-Beta */,
-				11438E9E28B5483100079B8F /* FirebaseAuth */,
-				11438EA028B5483100079B8F /* FirebaseAnalyticsSwift-Beta */,
-				11438EA228B5483100079B8F /* FirebaseFirestore */,
-			);
 			productName = Deltna;
 			productReference = 1148E7FE28ABA14D002E5AD7 /* Deltna.app */;
 			productType = "com.apple.product-type.application";
@@ -243,9 +327,6 @@
 				ar,
 			);
 			mainGroup = 1148E7F528ABA14C002E5AD7;
-			packageReferences = (
-				11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = 1148E7FF28ABA14D002E5AD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,30 +351,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11C0E8058A6377480A8E4A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60C74D109F41208D3047466C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deltna/Pods-Deltna-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9C0E1BFF320347FD33C72A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deltna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1148E7FA28ABA14C002E5AD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113D57A328C39A5A00B21D33 /* OnboardingSlide.swift in Sources */,
 				11438DCF28B3BA4900079B8F /* RestPasswordThreeViewController.swift in Sources */,
 				11438EB928B69BE600079B8F /* LocalizationSystem.swift in Sources */,
+				1107ECD528BD2E0D00D41A4F /* EditSubscribtion.swift in Sources */,
 				113CDDFB28B1206B00F15117 /* LoginViewController.swift in Sources */,
+				1157C0B528BB923D0024EF9F /* MapViewController.swift in Sources */,
 				115B342528B269B900E4C220 /* OrderViewController.swift in Sources */,
 				1157C01828B7F8050024EF9F /* AboutUsViewController.swift in Sources */,
 				113CDDFE28B1207C00F15117 /* SingupViewController.swift in Sources */,
-				11438E1328B4FFD100079B8F /* LogoutViewController.swift in Sources */,
+				113D579A28C0CED400B21D33 /* YourSubscribtionViewController.swift in Sources */,
+				1107ECDC28BD36F500D41A4F /* EditSubscribtionViewController.swift in Sources */,
+				11478B1428C79356003FA36A /* WeeklysubbscriptionNoticeViewController.swift in Sources */,
+				113D57A728C39E6700B21D33 /* OnboardingViewControllerCellCollectionViewCell.swift in Sources */,
+				11478B1E28C7943A003FA36A /* SaudiNoticeViewController.swift in Sources */,
+				11478B1B28C79416003FA36A /* ArabicNoticeViewController.swift in Sources */,
+				11478B2E28C7B31B003FA36A /* UserInfos.swift in Sources */,
 				1157C01528B7F2DE0024EF9F /* ProfileViewController.swift in Sources */,
 				11438EB628B6981D00079B8F /* SettingViewController.swift in Sources */,
+				11478B1828C793FC003FA36A /* PaymentNoticeViewController.swift in Sources */,
 				113CDE0528B1558400F15117 /* SubscribtionViewController.swift in Sources */,
 				113CDDF728B1203600F15117 /* Constants.swift in Sources */,
-				1148E80628ABA14D002E5AD7 /* TabBarViewController.swift in Sources */,
+				11478B1028C78EAB003FA36A /* UIView+Extension.swift in Sources */,
+				113D579F28C3962E00B21D33 /* OnboardingViewController.swift in Sources */,
+				1148E80628ABA14D002E5AD7 /* ViewController.swift in Sources */,
 				11438DCB28B3B95400079B8F /* RestPasswordTwoViewController.swift in Sources */,
 				1157C01028B7B9AE0024EF9F /* MenuViewController.swift in Sources */,
+				113D579728C0CD7900B21D33 /* TabBarController.swift in Sources */,
 				1148E80228ABA14D002E5AD7 /* AppDelegate.swift in Sources */,
 				113CDDF428B1203200F15117 /* Utilities.swift in Sources */,
 				113CDE0128B1209000F15117 /* RestPasswordViewController.swift in Sources */,
 				11438E1028B40E6F00079B8F /* HomeViewController.swift in Sources */,
 				1148E80428ABA14D002E5AD7 /* SceneDelegate.swift in Sources */,
+				1107ECCB28BCD9AF00D41A4F /* Subscribtion.swift in Sources */,
+				113F824228CCB7E7005F739F /* SubscribtionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,9 +607,11 @@
 		};
 		1148E81328ABA14F002E5AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA24929619399E2C0356F02 /* Pods-Deltna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N55MW8RU7L;
 				INFOPLIST_FILE = Deltna/Info.plist;
@@ -464,6 +621,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Deltna.Deltna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,9 +629,11 @@
 		};
 		1148E81428ABA14F002E5AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B279E459FB11457F4DDF435 /* Pods-Deltna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N55MW8RU7L;
 				INFOPLIST_FILE = Deltna/Info.plist;
@@ -483,6 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Deltna.Deltna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,50 +671,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		11438E9828B5483100079B8F /* FirebaseFirestoreCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
-		};
-		11438E9A28B5483100079B8F /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		11438E9C28B5483100079B8F /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		11438E9E28B5483100079B8F /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		11438EA028B5483100079B8F /* FirebaseAnalyticsSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAnalyticsSwift-Beta";
-		};
-		11438EA228B5483100079B8F /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11438E9728B5483100079B8F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1148E7F628ABA14C002E5AD7 /* Project object */;
 }

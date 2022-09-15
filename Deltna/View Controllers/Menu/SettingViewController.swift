@@ -87,10 +87,16 @@ class SettingViewController: UIViewController {
     
     }
     @IBAction func backButton(_ sender: Any) {
-        let tabBarViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarViewController) as? MenuViewController
-
-        self.view.window?.rootViewController = tabBarViewController
-        self.view.window?.makeKeyAndVisible()
+//        let menuViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.menuViewController) as?
+//            MenuViewController
+//
+//
+//        self.view.window?.rootViewController = menuViewController
+//        self.view.window?.makeKeyAndVisible()
+        self.navigationController?.popToRootViewController(animated: true)
+        self.tabBarController?.tabBar.isHidden = false
+        
+        
     }
    
     @IBAction func logOutButton(_ sender: UIButton) {
