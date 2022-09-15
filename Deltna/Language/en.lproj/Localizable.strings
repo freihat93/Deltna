@@ -63,7 +63,7 @@
 "Accountinfo" = "Account info";
 "ChangePassword" = "Change Password";
 "Language" = "Language";
-"logout" = "logout";
+"logout" = "Logout";
 "Settings" = "Settings";
 
 
@@ -98,3 +98,34 @@
 "PrivacyPolicy" = "Privacy policy";
 
 "TermsOfUse" = "Terms of use";
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////
+"compError" = "Compane Empty" ;
+"addressError" = "Address Empty";
+"buildingError" = "building number Empty";
+"CountError" = "Count Empty";
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////
+//Rest View Controller
+"restTitle" = "Password Recovery";
+"restSubTitle" = "We will send to your Email code to change password";
+"send" = "Send";
+
+///////////////////////////////////////////////////////////////
+//Rest Two View Controller
+"restTwoTitle" = "Password Recovery";
+"restTwoSubTitle" = "Enter the code we send you in your Email to change password";
+"code" = "Code";
+"EnterCode" = "Enter";
+"codeError" = "Code Empty";

@@ -114,7 +114,7 @@ class SingupViewController: UIViewController {
             passwordError.textColor = UIColor.green
         }else{
             passwordError.text = "Weakpassword".localizedT
-            emailError.textColor = UIColor.red
+            passwordError.textColor = UIColor.red
         }
     }
     @IBAction func comPass_act(_ sender: Any){
@@ -124,7 +124,7 @@ class SingupViewController: UIViewController {
             confirmPasswordError.textColor = UIColor.green
         }else{
             confirmPasswordError.text = "Weakpassword".localizedT
-            emailError.textColor = UIColor.red
+            confirmPasswordError.textColor = UIColor.red
         }
         if passwordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) == confirmPasswordTextFeield.text!.trimmingCharacters(in: .whitespacesAndNewlines) {
             self.passwordError.text = "PasswordMatch".localizedT
@@ -132,9 +132,9 @@ class SingupViewController: UIViewController {
             self.passwordError.textColor = UIColor.green
             self.confirmPasswordError.textColor = UIColor.green
         }else{
-            self.passwordError.text = "PasswordDon'tMatch".localizedT
+            //self.passwordError.text = "PasswordDon'tMatch".localizedT
             self.confirmPasswordError.text = "PasswordDon'tMatch".localizedT
-            self.passwordError.textColor = UIColor.red
+            //self.passwordError.textColor = UIColor.red
             self.confirmPasswordError.textColor = UIColor.red
                 }
     }
@@ -227,21 +227,23 @@ class SingupViewController: UIViewController {
 //                                                                    "phone":phoneNumber]) { error in
 //                        if error != nil {
                                                              
+//                    db.collection("users").addDocument(data: ["FirstName":firstName,"LastName" :lastName,"phone":phoneNumber, "uid": authResult!.user.uid]) { (error) in
                     db.collection("users").addDocument(data: ["FirstName":firstName,"LastName" :lastName,"phone":phoneNumber, "uid": authResult!.user.uid]) { (error) in
-
+                        
                         if error != nil {
                             self.showErrorAlertDB("")
+                        }else {
+                            
+                            //transitionToHome
+                            let loginViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
+                            
+                            self.view.window?.rootViewController = loginViewController
+                            self.view.window?.makeKeyAndVisible()
+                            
+                            self.cleenTextFeield()
                         }
                         
                     }
-                    
-                    //transitionToHome
-                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                    
-                    self.view.window?.rootViewController = homeViewController
-                    self.view.window?.makeKeyAndVisible()
-                    
-                    self.cleenTextFeield()
                 }
                 
           }

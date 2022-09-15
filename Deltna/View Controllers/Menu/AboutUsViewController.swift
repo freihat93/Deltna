@@ -32,20 +32,15 @@ class AboutUsViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        let menuViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.menuViewController) as? MenuViewController
-
-        self.view.window?.rootViewController = menuViewController
-        self.view.window?.makeKeyAndVisible()
+//        let menuViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.menuViewController) as? MenuViewController
+//
+//        self.view.window?.rootViewController = menuViewController
+//        self.view.window?.makeKeyAndVisible()
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
