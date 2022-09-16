@@ -2,8 +2,7 @@
 [![Language](https://img.shields.io/badge/language-Swift%205.0-orange.svg)](https://swift.org)
 [![Build Status][travis-image]][travis-url]
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
-[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
+
 
 
 # Deltna
@@ -79,30 +78,11 @@ GMSServices.providAPIKey("YourGoogleMapABI")
 
 
 
-#### Manually
-1. Download and drop ```YourLibrary.swift``` in your project.  
-2. Congratulations!  
-
-## Usage example
-
-```swift
-import EZSwiftExtensions
-ez.detectScreenShot { () -> () in
-    print("User took a screen shot")
-}
-```
-
-## Contribute
-
-We would love you for the contribution to **YourLibraryName**, check the ``LICENSE`` file for more info.
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Your Name – [@Mohammed Freihat](https://www.linkedin.com/in/mohammad-freihat-045261105/) – Freihat120@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
