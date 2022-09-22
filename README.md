@@ -8,7 +8,7 @@
 # Deltna
 <br />
 <p align="center">
-  <a href="[https://github.com/freihat93/Deltna/blob/main/Deltna/Assets.xcassets/logo.imageset/%D8%AF%D9%84%D8%AA%D9%86%D8%A7.png]">
+  <a href="[Deltna/Assets.xcassets/logo.imageset/دلتنا.png]">
     <img src="logo.jpeg" alt="Logo" width="80" height="80">
   </a>
   <p align="center">
