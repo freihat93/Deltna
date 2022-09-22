@@ -15,10 +15,18 @@
     
   </p>
 </p>
+<p align="center">
+<img src= "https://i.ibb.co/m0dGBhN/captures-chrome-capture-2022-8-22-3.png" height="300" width="150" >
+ <img src= "https://i.ibb.co/FWFW9r5/captures-chrome-capture-2022-8-22.png" height="300" width="150" >
+</p>
 
-<p align="row">
-<!-- <img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" > -->
+<p align="center">
+<img src= "https://i.ibb.co/ZHjZwJK/captures-chrome-capture-2022-8-22-2.png" >
+
+</p>
+<p align="center">
+
+<img src= "https://i.ibb.co/p3ZX7V1/captures-chrome-capture-2022-8-22-4.png"  >
 </p>
 
 ## Features
