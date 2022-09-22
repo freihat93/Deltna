@@ -79,9 +79,9 @@ GMSServices.providAPIKey("YourGoogleMapABI")
 
 
 
-## Meta
+## Linkedin & Gmail
 
-Your Name – [@Mohammed Freihat](https://www.linkedin.com/in/mohammad-freihat-045261105/) – Freihat120@gmail.com
+[@Mohammed Freihat](https://www.linkedin.com/in/mohammad-freihat-045261105/) – Freihat120@gmail.com
 
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
